@@ -41,16 +41,17 @@ function getNewPosition(card, posY) {
     return resultado;
 }
 
-function mudarTema() {
-    const body = document.body;
-    const corAtual = getComputedStyle(body).backgroundColor;
+document.addEventListener('DOMContentLoaded', function() {
+    const changeTheme = document.getElementById('changeTheme');
+    changeTheme.addEventListener('click', function() {
+        const body = document.body;
 
-     if (corAtual === 'rgb(0, 0, 0)') { 
-       
-         body.style.backgroundColor = '#FFFFFF';
-     } else { // Caso contrário (tema claro)
-        
-         body.style.backgroundColor = '#000000';
-     }
-    
-}
+        const corAtual = getComputedStyle(body).backgroundColor;
+
+        if (corAtual === 'rgb(0, 0, 0)') {
+            body.style.backgroundColor = '#FFFFFF';
+        } else {
+            body.style.backgroundColor = '#000000';
+        }
+    });
+});
