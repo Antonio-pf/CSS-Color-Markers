@@ -40,3 +40,17 @@ function getNewPosition(card, posY) {
 
     return resultado;
 }
+
+function mudarTema() {
+    const body = document.body;
+    const corAtual = getComputedStyle(body).backgroundColor;
+
+     if (corAtual === 'rgb(0, 0, 0)') { 
+       
+         body.style.backgroundColor = '#FFFFFF';
+     } else { // Caso contrário (tema claro)
+        
+         body.style.backgroundColor = '#000000';
+     }
+    
+}
