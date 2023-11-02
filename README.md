@@ -7,5 +7,5 @@ A ideia é aplicar conceitos de design front-end e uso de animações e estilos 
  - [Acesse aqui](https://antonio-pf.github.io/CSS-Color-Markers/)
 
 <p>
-    Agradecimentos à <a href="https://www.freecodecamp.org/">Free Code Camp</a>
+    Agradecimentos à <a href="https://www.freecodecamp.org/" target="_blank">Free Code Camp</a>
 </p>
